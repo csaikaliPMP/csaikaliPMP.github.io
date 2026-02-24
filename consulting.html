@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consulting — Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html">Your Name</a></div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="consulting.html">Consulting</a>
+        <a href="articles.html">Articles</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="kicker">Consulting</p>
+      <h1>Clear scopes, practical delivery.</h1>
+      <p class="subtitle">A simple menu for now — we can refine offerings later.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Operations & Execution</h2>
+        <p>Workflows, roles, operating rhythm, and cross-functional execution.</p>
+      </div>
+      <div class="card">
+        <h2>Reporting & Decision Support</h2>
+        <p>Metrics that drive action: lightweight, consistent, and adopted.</p>
+      </div>
+      <div class="card">
+        <h2>Change Enablement</h2>
+        <p>Stakeholders, adoption plan, training, comms — making change stick.</p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card" style="grid-column: span 12;">
+        <h2>Engagement formats</h2>
+        <p class="subtitle" style="margin-top:8px;">
+          Advisory sessions • Project-based delivery • Workshops
+        </p>
+        <div class="actions">
+          <a class="button" href="contact.html">Start a conversation</a>
+          <a class="button secondary" href="articles.html">See how I think</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Your Name</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
