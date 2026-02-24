@@ -110,3 +110,149 @@ h1{
   color: var(--muted);
   font-size: .92rem;
 }
+/* =========================
+   Resume (polished / print-like)
+   ========================= */
+
+.resume-shell{
+  background: var(--soft);
+  padding: 28px 0 60px;
+}
+
+.resume-paper{
+  max-width: 980px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 26px 26px 34px;
+}
+
+.resume-top{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--line);
+}
+
+.resume-name{
+  margin:0;
+  font-size: 2.1rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.resume-meta{
+  color: var(--muted);
+  font-size: .98rem;
+}
+
+.resume-meta a{
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.resume-tagline{
+  font-weight: 700;
+  margin: 0;
+}
+
+.resume-actions{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.resume-actions .button{
+  padding: 9px 12px;
+  border-radius: 12px;
+}
+
+.resume-section{
+  margin-top: 18px;
+}
+
+.resume-section-title{
+  margin: 0;
+  font-size: .9rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.resume-rule{
+  border: 0;
+  border-top: 2px solid var(--line);
+  margin: 8px 0 10px;
+}
+
+.resume-summary{
+  margin: 0;
+  color: var(--muted);
+}
+
+.resume-two-col{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+@media (min-width: 860px){
+  .resume-two-col{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.resume-list{
+  margin: 0;
+  padding-left: 18px;
+}
+.resume-list li{
+  margin: 6px 0;
+}
+
+.role-block{
+  padding-top: 14px;
+  margin-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.role-block:first-of-type{
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.role-head{
+  display:flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.role-title{
+  margin:0;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.role-dates{
+  white-space: nowrap;
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+.role-sub{
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* Print */
+@media print{
+  .header { display:none !important; }
+  .resume-shell{ background:#fff; padding:0; }
+  .resume-paper{ border:0; border-radius:0; padding:0; }
+  a{ text-decoration:none; }
+}
