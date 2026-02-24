@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Articles — Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html">Your Name</a></div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="consulting.html">Consulting</a>
+        <a class="active" href="articles.html">Articles</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="kicker">Articles</p>
+      <h1>Short, practical writing.</h1>
+      <p class="subtitle">Drafts for now — we’ll turn these into real posts.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Why Most Reporting Doesn’t Drive Decisions</h2>
+        <p>Draft — coming soon.</p>
+      </div>
+      <div class="card">
+        <h2>What “Operational Clarity” Actually Means</h2>
+        <p>Draft — coming soon.</p>
+      </div>
+      <div class="card">
+        <h2>Change Management for Busy Teams</h2>
+        <p>Draft — coming soon.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Your Name</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
