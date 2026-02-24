@@ -1,11 +1,63 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Your Name | Personal Website</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio & Consulting</title>
+  <meta name="description" content="Personal brand website with resume, articles, and consulting." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This site is under construction.</p>
-  <p>I’m building my consulting and personal brand presence.</p>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">Your Name</div>
+      <nav class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="consulting.html">Consulting</a>
+        <a href="articles.html">Articles</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="kicker">Corporate • polished • practical</p>
+      <h1>I help teams create operational clarity and execute with confidence.</h1>
+      <p class="subtitle">
+        This site is a work in progress. I’m building a focused personal brand presence with my resume,
+        articles, and consulting offerings.
+      </p>
+
+      <div class="actions">
+        <a class="button" href="consulting.html">Work with me</a>
+        <a class="button secondary" href="articles.html">Read articles</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Services</h2>
+        <p>Operations, reporting clarity, and change enablement.</p>
+      </div>
+      <div class="card">
+        <h2>Proof</h2>
+        <p>Resume and case-style writeups (anonymized where needed).</p>
+      </div>
+      <div class="card">
+        <h2>Thought leadership</h2>
+        <p>Practical writing on execution, metrics, and adoption.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Your Name • Built on GitHub Pages</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
