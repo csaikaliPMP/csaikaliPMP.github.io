@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html">Your Name</a></div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="consulting.html">Consulting</a>
+        <a href="articles.html">Articles</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="kicker">Contact</p>
+      <h1>Let’s talk.</h1>
+      <p class="subtitle">For now, we’ll keep it simple. We can add a form later.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Email</h2>
+        <p><a href="mailto:you@example.com">you@example.com</a></p>
+      </div>
+      <div class="card">
+        <h2>LinkedIn</h2>
+        <p><a href="#">linkedin.com/in/yourname</a></p>
+      </div>
+      <div class="card">
+        <h2>Availability</h2>
+        <p>Message me with a few times and I’ll reply with a slot.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Your Name</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
