@@ -1,22 +1,28 @@
-# Claudia Saikali website
+# Claudia Saikali — Premium Website
 
-This folder contains the four-page website:
+Upload these files to the root of your GitHub repository:
 
-- `index.html` — Home
-- `experience.html` — Experience
-- `insights.html` — Insights
-- `contact.html` — Contact
-- `style.css` — Shared styling
+- `index.html`
+- `style.css`
+- `profile.jpg`
+- `experience.html`
+- `insights.html`
+- `contact.html`
 
-## Add your photo
-Place your chosen professional headshot in this folder and name it:
+The homepage is fully designed and responsive. It includes:
 
-`profile.jpg`
+- A polished executive hero section
+- Your professional photo
+- Credibility metrics
+- Client challenges
+- The Clarity-to-Execution Method
+- Service sections
+- About section
+- Insights preview
+- Contact call-to-action
+- Mobile navigation and subtle scrolling animations
 
-## Add your resume PDF
-Place your resume PDF in this folder and name it:
+After uploading, commit the changes and refresh:
+https://csaikalipmp.github.io/
 
-`Claudia-Saikali-Resume.pdf`
-
-## Publish on GitHub Pages
-Upload all files to the root of your `csaikaliPMP.github.io` repository. Replace the existing files when prompted.
+On a Mac, use Command + Shift + R for a hard refresh.
