@@ -1,28 +1,23 @@
-# Claudia Saikali — Premium Website
+# Claudia Saikali — Project Control Website
 
-Upload these files to the root of your GitHub repository:
+This version positions Claudia around a clear consulting offer:
 
-- `index.html`
-- `style.css`
-- `profile.jpg`
-- `experience.html`
-- `insights.html`
-- `contact.html`
+**Helping organizations regain control of complex projects and client portfolios.**
 
-The homepage is fully designed and responsive. It includes:
+Upload these files to the root of the GitHub Pages repository:
 
-- A polished executive hero section
-- Your professional photo
-- Credibility metrics
-- Client challenges
-- The Clarity-to-Execution Method
-- Service sections
-- About section
-- Insights preview
-- Contact call-to-action
-- Mobile navigation and subtle scrolling animations
+- index.html
+- experience.html
+- insights.html
+- contact.html
+- style.css
+- profile.jpg
 
-After uploading, commit the changes and refresh:
-https://csaikalipmp.github.io/
+Optional:
+- Add your resume PDF as `Claudia-Saikali-Resume.pdf`
 
-On a Mac, use Command + Shift + R for a hard refresh.
+After upload:
+1. Commit the changes.
+2. Wait about 1–2 minutes.
+3. Open https://csaikalipmp.github.io/
+4. On Mac, press Command + Shift + R to hard refresh.
