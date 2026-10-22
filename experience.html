@@ -148,78 +148,110 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",san
 }
 .current-role ul + .role-subhead{margin-top:25px!important}
 
-/* Completely independent credentials layout */
-.credentials-rebuilt{
-  width:100%!important;
-  margin:0!important;
-  padding:58px 0!important;
-  background:var(--cream)!important;
-}
-.credentials-inner{
-  width:calc(100% - 48px)!important;
-  max-width:1120px!important;
-  margin:0 auto!important;
-  padding:0!important;
-}
-.credentials-heading{
-  width:100%!important;
-  display:grid!important;
-  grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr)!important;
-  gap:54px!important;
-  align-items:end!important;
-  margin:0 0 30px!important;
-}
-.credentials-heading h2{
-  margin:0!important;
-  font-family:"Playfair Display",serif!important;
-  font-size:clamp(2rem,3vw,2.85rem)!important;
-  line-height:1.07!important;
-  letter-spacing:-.03em!important;
-}
-.credentials-heading > p{
-  width:100%!important;
-  max-width:620px!important;
-  margin:0!important;
-  color:var(--muted)!important;
-  line-height:1.6!important;
-}
-.credentials-grid-rebuilt{
-  width:100%!important;
-  display:grid!important;
-  grid-template-columns:repeat(2,minmax(0,1fr))!important;
-  gap:14px!important;
-  margin:0!important;
-  padding:0!important;
-}
-.credential-rebuilt{
-  width:100%!important;
-  min-width:0!important;
-  padding:23px 25px!important;
-  background:#fff!important;
-  border:1px solid var(--line)!important;
-  border-radius:5px!important;
-}
-.credential-rebuilt:nth-child(2),
-.credential-rebuilt:nth-child(3){
-  background:var(--sand)!important;
-}
-.credential-rebuilt strong{
-  display:block!important;
-  margin:0 0 6px!important;
-  color:var(--ink)!important;
-}
-.credential-rebuilt span{
-  display:block!important;
-  color:var(--muted)!important;
-  font-size:.86rem!important;
-  line-height:1.45!important;
-}
 @media(max-width:760px){
   .credentials-inner{width:calc(100% - 32px)!important}
   .credentials-heading,
   .credentials-grid-rebuilt{grid-template-columns:1fr!important}
   .credentials-heading{gap:18px!important}
   .current-role{padding:24px!important}
+}
+</style>
+
+
+<style>
+/* Education & certifications — rebuilt as one centered, cohesive section */
+.education-section{
+  width:100%!important;
+  margin:0!important;
+  padding:64px 24px!important;
+  background:#f4f0e8!important;
+  border-top:1px solid rgba(32,33,31,.14)!important;
+  border-bottom:1px solid rgba(32,33,31,.14)!important;
+}
+.education-wrap{
+  width:100%!important;
+  max-width:960px!important;
+  margin:0 auto!important;
+  padding:0!important;
+}
+.education-header{
+  width:100%!important;
+  max-width:720px!important;
+  margin:0 auto 36px!important;
+  padding:0!important;
+  text-align:center!important;
+}
+.education-header .kicker{
+  margin:0 0 10px!important;
+  text-align:center!important;
+}
+.education-header h2{
+  margin:0!important;
+  font-family:"Playfair Display",serif!important;
+  font-size:clamp(2rem,3vw,2.8rem)!important;
+  line-height:1.08!important;
+  letter-spacing:-.03em!important;
+  color:#20211f!important;
+  text-align:center!important;
+}
+.education-intro{
+  max-width:650px!important;
+  margin:14px auto 0!important;
+  color:#62625d!important;
+  font-size:.95rem!important;
+  line-height:1.6!important;
+  text-align:center!important;
+}
+.education-list{
+  width:100%!important;
+  margin:0 auto!important;
+  padding:0!important;
+  border-top:1px solid rgba(32,33,31,.18)!important;
+}
+.education-item{
+  width:100%!important;
+  display:grid!important;
+  grid-template-columns:150px minmax(0,1fr)!important;
+  gap:30px!important;
+  align-items:center!important;
+  margin:0!important;
+  padding:20px 4px!important;
+  background:transparent!important;
+  border:0!important;
+  border-bottom:1px solid rgba(32,33,31,.18)!important;
+  border-radius:0!important;
+}
+.education-type{
+  color:#8a765c!important;
+  font-size:.68rem!important;
+  font-weight:700!important;
+  letter-spacing:.12em!important;
+  text-transform:uppercase!important;
+}
+.education-content{
+  min-width:0!important;
+}
+.education-content strong{
+  display:block!important;
+  margin:0 0 4px!important;
+  color:#20211f!important;
+  font-size:1rem!important;
+  font-weight:700!important;
+}
+.education-content span{
+  display:block!important;
+  color:#62625d!important;
+  font-size:.88rem!important;
+  line-height:1.45!important;
+}
+@media(max-width:700px){
+  .education-section{padding:50px 20px!important}
+  .education-wrap{max-width:100%!important}
+  .education-item{
+    grid-template-columns:1fr!important;
+    gap:6px!important;
+    padding:18px 2px!important;
+  }
 }
 </style>
 
@@ -263,32 +295,45 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",san
 <article class="role"><div class="role-meta"><strong>Klick Health</strong><span>Apr 2011 – Sept 2018</span></div><div><h3>Digital Program Manager, Senior Project Manager &amp; Digital Project Manager</h3><ul><li>Led pharmaceutical digital portfolios for clients including Acorda, Pfizer, Reckitt Benckiser and Salix.</li><li>Managed 30–50 concurrent projects annually and programs with budgets of $5M–$10M.</li><li>Owned client-facing delivery, financial performance, resourcing, risk and cross-functional execution.</li></ul></div></article>
 <article class="role"><div class="role-meta"><strong>Digital Cement</strong><span>Feb 2007 – Apr 2011</span></div><div><h3>Project Manager, Project Coordinator &amp; Quality Assurance</h3><ul><li>Supported digital project delivery across websites, redesigns and email programs.</li><li>Managed scoping, estimates, timelines, resources, budgets, risks and issues.</li></ul></div></article>
 </div></div></section>
-<section class="section credentials credentials-rebuilt">
-  <div class="credentials-inner">
-    <div class="credentials-heading">
-      <div>
-        <p class="kicker">Credentials</p>
-        <h2>Education &amp; certifications</h2>
-      </div>
-      <p>Formal education and professional credentials supporting project leadership, technology management and organizational change.</p>
+<section class="education-section">
+  <div class="education-wrap">
+    <div class="education-header">
+      <p class="kicker">Credentials</p>
+      <h2>Education &amp; certifications</h2>
+      <p class="education-intro">Formal education and professional credentials supporting project leadership, technology management and organizational change.</p>
     </div>
 
-    <div class="credentials-grid-rebuilt">
-      <div class="credential-rebuilt">
-        <strong>Bachelor of Commerce</strong>
-        <span>Information Technology Management, Toronto Metropolitan University</span>
+    <div class="education-list">
+      <div class="education-item">
+        <div class="education-type">Education</div>
+        <div class="education-content">
+          <strong>Bachelor of Commerce</strong>
+          <span>Information Technology Management, Toronto Metropolitan University</span>
+        </div>
       </div>
-      <div class="credential-rebuilt">
-        <strong>Marketing Minor</strong>
-        <span>Toronto Metropolitan University</span>
+
+      <div class="education-item">
+        <div class="education-type">Education</div>
+        <div class="education-content">
+          <strong>Marketing Minor</strong>
+          <span>Toronto Metropolitan University</span>
+        </div>
       </div>
-      <div class="credential-rebuilt">
-        <strong>Leadership Essentials Certificate</strong>
-        <span>University of Toronto</span>
+
+      <div class="education-item">
+        <div class="education-type">Certificate</div>
+        <div class="education-content">
+          <strong>Leadership Essentials Certificate</strong>
+          <span>University of Toronto</span>
+        </div>
       </div>
-      <div class="credential-rebuilt">
-        <strong>PMP &amp; Prosci® Change Practitioner</strong>
-        <span>Project Management Institute and Prosci®</span>
+
+      <div class="education-item">
+        <div class="education-type">Professional</div>
+        <div class="education-content">
+          <strong>PMP &amp; Prosci® Change Practitioner</strong>
+          <span>Project Management Institute and Prosci®</span>
+        </div>
       </div>
     </div>
   </div>
