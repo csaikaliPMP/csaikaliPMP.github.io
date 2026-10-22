@@ -1,48 +1,69 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Experience | Claudia Saikali</title><meta name="description" content="Selected leadership experience in project recovery, portfolio oversight, financial management and organizational change.">
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-</head><body>
-<header class="site-header"><div class="shell nav-shell">
+<link rel="icon" type="image/png" href="favicon.png"><title>Experience | Claudia Saikali</title>
+<style>
+:root{--ink:#20211f;--muted:#62625d;--paper:#fbfaf7;--white:#fff;--cream:#f4f0e8;--sand:#e8dfd1;--sage:#d7ddd2;--sage-deep:#5f6959;--line:rgba(32,33,31,.14)}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}
+*{box-sizing:border-box}
+.shell{width:min(1120px,calc(100% - 48px));margin:auto}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(251,250,247,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.nav-shell{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700}
+.brand-mark{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:#fff;font-family:"Playfair Display",serif}
+.nav{display:flex;align-items:center;gap:26px}.nav a{color:var(--ink);text-decoration:none;font-size:.88rem}.nav a.active{font-weight:700}
+.nav-cta{padding:10px 16px;border-radius:999px;background:var(--ink);color:#fff!important}
+.menu-toggle{display:none}.skip-link{position:absolute;left:-9999px}
+.kicker{margin:0 0 10px;color:#8a765c;font-size:.71rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.page-hero{background:var(--cream);border-bottom:1px solid var(--line);padding:58px 0 52px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:end}
+.page-hero h1{max-width:760px;margin:0;font-family:"Playfair Display",serif;font-size:clamp(2.8rem,5vw,4.6rem);line-height:1;letter-spacing:-.04em}
+.hero-copy{margin:0;color:var(--muted);line-height:1.65}
+.section{padding:60px 0;border-bottom:1px solid var(--line)}
+.section-title{display:grid;grid-template-columns:.75fr 1.25fr;gap:50px;align-items:end;margin-bottom:30px}
+.section-title h2{margin:0;font-family:"Playfair Display",serif;font-size:clamp(2rem,3vw,2.85rem);line-height:1.07}
+.section-title p{margin:0;color:var(--muted);line-height:1.6}
+.site-footer{padding:44px 0 22px;background:#181a18;color:#fff}.footer-grid{display:flex;justify-content:space-between;gap:40px}.footer-brand{color:#fff}.site-footer p{color:rgba(255,255,255,.66);max-width:430px}.footer-links{display:flex;gap:18px;flex-wrap:wrap}.footer-links a{color:#fff;text-decoration:none;font-size:.85rem}.footer-bottom{display:flex;justify-content:space-between;margin-top:34px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.55);font-size:.75rem}
+@media(max-width:760px){.shell{width:min(100% - 32px,1120px)}.hero-grid,.section-title{grid-template-columns:1fr;gap:18px}.page-hero{padding:44px 0}.nav{gap:13px}.nav a:not(.nav-cta){display:none}.section{padding:46px 0}.footer-grid{flex-direction:column}}
+</style>
+<style>
+.experience-section{background:#fff}
+.timeline{border-top:1px solid var(--line)}
+.role{display:grid;grid-template-columns:210px 1fr;gap:38px;padding:29px 0;border-bottom:1px solid var(--line)}
+.role-meta strong{display:block;margin-bottom:5px}.role-meta span{color:#817d75;font-size:.78rem}
+.role h3{margin:0 0 12px;font-family:"Playfair Display",serif;font-size:1.35rem;line-height:1.18}
+.role ul{margin:0;padding-left:18px;color:#555650}.role li{margin:6px 0;line-height:1.48}
+.role:nth-child(2),.role:nth-child(5){background:linear-gradient(90deg,transparent 0,#fbf8f2 7%,#fbf8f2 93%,transparent 100%)}
+.credentials{background:var(--cream)}
+.credential-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.credential{padding:22px 24px;border:1px solid var(--line);border-radius:5px;background:#fff}
+.credential:nth-child(2),.credential:nth-child(3){background:var(--sand)}
+.credential strong{display:block;margin-bottom:5px}.credential span{color:var(--muted);font-size:.86rem}
+@media(max-width:760px){.role{grid-template-columns:1fr;gap:10px}.credential-grid{grid-template-columns:1fr}}
+</style></head><body><header class="site-header"><div class="shell nav-shell">
 <a class="brand" href="index.html"><span class="brand-mark">CS</span><span>Claudia Saikali</span></a>
-<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-<nav class="nav" id="primary-nav" aria-label="Primary navigation">
-<a href="index.html">Home</a><a href="experience.html">Experience</a><a href="insights.html">Insights</a><a class="nav-cta" href="contact.html">Let’s talk</a>
-</nav></div></header>
-<script>document.querySelectorAll(".nav a")[1].classList.add("active")</script>
+<nav class="nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a href="experience.html">Experience</a><a href="insights.html">Insights</a><a class="nav-cta" href="contact.html">Let’s talk</a></nav>
+</div></header>
+<script>document.querySelectorAll(".nav a")[2].classList.add("active")</script>
 <main>
-<section class="page-hero"><div class="shell"><p class="kicker">Experience</p><h1>Leadership across complex delivery, portfolios, finance and change.</h1><p>More than 15 years leading digital, product, program and operational work—often in environments with many moving pieces, demanding stakeholders and significant financial accountability.</p><div class="actions"><a class="button button-dark" href="Claudia-Saikali-Resume.pdf">Download resume</a><a class="text-link" href="contact.html">Contact me <span>→</span></a></div></div></section>
-<section class="content-section"><div class="shell"><div class="timeline">
-
-<article class="timeline-item"><div class="timeline-meta"><h3>Independent Consulting</h3><p>2026 – Present</p></div><div class="timeline-body"><h2>Project Management & Operations Consultant</h2><ul>
-<li>Lead project and portfolio management for a large-scale telecommunications infrastructure construction program, providing executive-level oversight across delivery, financials, forecasting, governance and reporting.</li>
-<li>Lead financial oversight and cost-to-complete forecasting across a $250M+ capital program, reconciling actuals, remaining commitments, risks and forecasts to provide leadership with clear visibility into expected outcomes.</li>
-<li>Partner with executive leadership, finance, construction, engineering, sales and contractors to strengthen governance, resolve delivery issues and support strategic decision-making.</li>
-<li>Provide consulting services across additional client engagements, including program and project management, SOW development, project planning and timelines, team leadership and training, strategic planning, executive updates and delivery process improvement.</li>
-</ul></div></article>
-
-<article class="timeline-item"><div class="timeline-meta"><h3>Klick Health</h3><p>Nov 2022 – Jan 2026</p></div><div class="timeline-body"><h2>Senior Director, Product & Project Management (Finance)</h2><ul><li>Owned the financial management system supporting project managers and delivery teams.</li><li>Led redesign across invoicing, time tracking, utilization, budgeting, revenue tracking and forecasting.</li><li>Partnered with the CFO, COO and VP Technology on investment priorities, capacity and executive reporting.</li><li>Oversaw $50M+ in departmental budgets and implemented AI-enabled OCR that reduced administrative effort by 20%.</li></ul></div></article>
-<article class="timeline-item"><div class="timeline-meta"><h3>Klick Health</h3><p>May 2021 – Nov 2022</p></div><div class="timeline-body"><h2>Director, Product & Project Management</h2><ul><li>Developed quarterly and annual roadmaps aligned to strategic priorities.</li><li>Led project managers plus support and training teams using hybrid Agile delivery.</li><li>Directed platform integrations and change efforts supporting adoption of new tools.</li></ul></div></article>
-<article class="timeline-item"><div class="timeline-meta"><h3>Klick Health</h3><p>Nov 2019 – May 2021</p></div><div class="timeline-body"><h2>Director, Product Rollout & Adoption</h2><ul><li>Designed scalable company-wide rollout processes for new software features and tools.</li><li>Led support and training across Canadian and U.S. offices.</li><li>Oversaw a product knowledge base with 200+ how-to articles.</li></ul></div></article>
-<article class="timeline-item"><div class="timeline-meta"><h3>Klick Health</h3><p>Sept 2018 – Nov 2019</p></div><div class="timeline-body"><h2>Senior Manager, Internal Operations</h2><ul><li>Improved project management tools, processes and standards at scale.</li><li>Developed pricing and estimation models that improved consistency and efficiency.</li><li>Led change management for the organization-wide implementation of Slack.</li></ul></div></article>
-<article class="timeline-item"><div class="timeline-meta"><h3>Klick Health</h3><p>Apr 2011 – Sept 2018</p></div><div class="timeline-body"><h2>Digital Program Manager, Senior Project Manager & Digital Project Manager</h2><ul><li>Led pharmaceutical digital portfolios for clients including Acorda, Pfizer, Reckitt Benckiser and Salix.</li><li>Managed 30–50 concurrent projects annually and programs with budgets of $5M–$10M.</li><li>Owned client-facing delivery, financial performance, resourcing, risk and cross-functional execution.</li></ul></div></article>
-<article class="timeline-item"><div class="timeline-meta"><h3>Digital Cement</h3><p>Feb 2007 – Apr 2011</p></div><div class="timeline-body"><h2>Project Manager, Project Coordinator & Quality Assurance</h2><ul><li>Supported digital project delivery across websites, redesigns and email programs.</li><li>Managed scoping, estimates, timelines, resources, budgets, risks and issues.</li></ul></div></article>
+<section class="page-hero"><div class="shell hero-grid"><div><p class="kicker">Experience</p><h1>Leadership across complex delivery, portfolios, finance and change.</h1></div><p class="hero-copy">More than 15 years leading digital, product, program and operational work, often in environments with many moving pieces, demanding stakeholders and significant financial accountability.</p></div></section>
+<section class="section experience-section"><div class="shell"><div class="section-title"><div><p class="kicker">Career</p><h2>Experience</h2></div><p>A progression of project, program, product and operational leadership with increasing responsibility for financial performance, delivery and organizational change.</p></div>
+<div class="timeline">
+<article class="role"><div class="role-meta"><strong>Klick Health</strong><span>Nov 2022 – Jan 2026</span></div><div><h3>Senior Director, Product &amp; Project Management (Finance)</h3><ul><li>Owned the financial management system supporting project managers and delivery teams.</li><li>Led redesign across invoicing, time tracking, utilization, budgeting, revenue tracking and forecasting.</li><li>Partnered with the CFO, COO and VP Technology on investment priorities, capacity and executive reporting.</li><li>Oversaw $50M+ in departmental budgets and implemented AI-enabled OCR that reduced administrative effort by 20%.</li></ul></div></article>
+<article class="role"><div class="role-meta"><strong>Klick Health</strong><span>May 2021 – Nov 2022</span></div><div><h3>Director, Product &amp; Project Management</h3><ul><li>Developed quarterly and annual roadmaps aligned to strategic priorities.</li><li>Led project managers plus support and training teams using hybrid Agile delivery.</li><li>Directed platform integrations and change efforts supporting adoption of new tools.</li></ul></div></article>
+<article class="role"><div class="role-meta"><strong>Klick Health</strong><span>Nov 2019 – May 2021</span></div><div><h3>Director, Product Rollout &amp; Adoption</h3><ul><li>Designed scalable company-wide rollout processes for new software features and tools.</li><li>Led support and training across Canadian and U.S. offices.</li><li>Oversaw a product knowledge base with 200+ how-to articles.</li></ul></div></article>
+<article class="role"><div class="role-meta"><strong>Klick Health</strong><span>Sept 2018 – Nov 2019</span></div><div><h3>Senior Manager, Internal Operations</h3><ul><li>Improved project management tools, processes and standards at scale.</li><li>Developed pricing and estimation models that improved consistency and efficiency.</li><li>Led change management for the organization-wide implementation of Slack.</li></ul></div></article>
+<article class="role"><div class="role-meta"><strong>Klick Health</strong><span>Apr 2011 – Sept 2018</span></div><div><h3>Digital Program Manager, Senior Project Manager &amp; Digital Project Manager</h3><ul><li>Led pharmaceutical digital portfolios for clients including Acorda, Pfizer, Reckitt Benckiser and Salix.</li><li>Managed 30–50 concurrent projects annually and programs with budgets of $5M–$10M.</li><li>Owned client-facing delivery, financial performance, resourcing, risk and cross-functional execution.</li></ul></div></article>
+<article class="role"><div class="role-meta"><strong>Digital Cement</strong><span>Feb 2007 – Apr 2011</span></div><div><h3>Project Manager, Project Coordinator &amp; Quality Assurance</h3><ul><li>Supported digital project delivery across websites, redesigns and email programs.</li><li>Managed scoping, estimates, timelines, resources, budgets, risks and issues.</li></ul></div></article>
 </div></div></section>
-<section class="content-section" style="background:var(--cream)"><div class="shell"><div class="section-heading"><p class="kicker">Credentials</p><h2>Education & certifications</h2></div><div class="credentials" style="margin-top:40px"><div class="credential"><strong>Bachelor of Commerce</strong><br>Information Technology Management, Toronto Metropolitan University</div><div class="credential"><strong>Marketing Minor</strong><br>Toronto Metropolitan University</div><div class="credential"><strong>Leadership Essentials Certificate</strong><br>University of Toronto</div><div class="credential"><strong>PMP & Prosci® Change Practitioner</strong><br>Project Management Institute and Prosci®</div></div></div></section>
-</main>
-<footer class="site-footer"><div class="shell footer-grid"><div>
-<a class="brand footer-brand" href="index.html"><span class="brand-mark">CS</span><span>Claudia Saikali</span></a>
-<p>Helping organizations regain control of complex projects and client portfolios.</p></div>
-<div class="footer-links"><a href="experience.html">Experience</a><a href="insights.html">Insights</a><a href="contact.html">Contact</a><a href="https://linkedin.com/in/claudia-saikali-pmp/" target="_blank" rel="noreferrer">LinkedIn</a></div>
-</div><div class="shell footer-bottom"><span>© <span id="year"></span> Claudia Saikali</span><span>Toronto, Ontario</span></div></footer>
-<script>
-document.getElementById("year").textContent=new Date().getFullYear();
-const btn=document.querySelector(".menu-toggle"),nav=document.querySelector(".nav");
-if(btn){btn.addEventListener("click",()=>{const open=btn.getAttribute("aria-expanded")==="true";btn.setAttribute("aria-expanded",String(!open));nav.classList.toggle("open")})}
-const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.12});
-document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
-</script>
-</body></html>
+<section class="section credentials"><div class="shell"><div class="section-title"><div><p class="kicker">Credentials</p><h2>Education &amp; certifications</h2></div><p>Formal education and professional credentials supporting project leadership, technology management and organizational change.</p></div><div class="credential-grid">
+<div class="credential"><strong>Bachelor of Commerce</strong><span>Information Technology Management, Toronto Metropolitan University</span></div>
+<div class="credential"><strong>Marketing Minor</strong><span>Toronto Metropolitan University</span></div>
+<div class="credential"><strong>Leadership Essentials Certificate</strong><span>University of Toronto</span></div>
+<div class="credential"><strong>PMP &amp; Prosci® Change Practitioner</strong><span>Project Management Institute and Prosci®</span></div>
+</div></div></section>
+</main><footer class="site-footer"><div class="shell footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">CS</span><span>Claudia Saikali</span></a><p>Helping organizations regain control of complex projects, programs and portfolios.</p></div><div class="footer-links"><a href="services.html">Services</a><a href="experience.html">Experience</a><a href="insights.html">Insights</a><a href="contact.html">Contact</a><a href="https://linkedin.com/in/claudia-saikali-pmp/" target="_blank" rel="noreferrer">LinkedIn</a></div></div><div class="shell footer-bottom"><span>© <span id="year"></span> Claudia Saikali</span><span>Toronto, Ontario</span></div></footer><script>document.getElementById("year").textContent=new Date().getFullYear();</script></body></html>
