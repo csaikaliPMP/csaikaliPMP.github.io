@@ -306,6 +306,200 @@
 }
 </style>
 
+
+<style>
+/* Homepage v3 — restrained, structured, professional */
+:root{
+  --ink:#20211f;
+  --muted:#65645f;
+  --paper:#fbfaf7;
+  --cream:#f5f1e9;
+  --sand:#e9e0d2;
+  --sage:#d9dfd4;
+  --sage-dark:#5e6958;
+  --stone:#e5e3de;
+  --line:rgba(32,33,31,.14);
+}
+
+/* Neutral professional hero — remove pastel/baby-shower effect */
+.hero{
+  background:var(--paper)!important;
+  padding-top:42px!important;
+}
+.hero:before{
+  width:245px!important;height:245px!important;
+  right:-75px!important;top:-105px!important;
+  background:var(--sand)!important;
+  opacity:.55!important;
+}
+.hero-grid{
+  grid-template-columns:minmax(0,1.3fr) minmax(270px,.58fr)!important;
+  gap:42px!important;
+}
+.hero h1{
+  max-width:660px!important;
+  font-size:clamp(2.55rem,4.5vw,4.15rem)!important;
+  line-height:1!important;
+}
+.portrait-wrap{width:min(100%,345px)!important}
+.portrait-accent{background:var(--sage)!important}
+
+/* Stats: no coloured blocks */
+.hero-stats{
+  background:#fff!important;
+  border:1px solid var(--line)!important;
+  border-radius:6px!important;
+  overflow:hidden!important;
+}
+.hero-stats > div{
+  background:#fff!important;
+  padding:22px 26px!important;
+  border-right:1px solid var(--line)!important;
+}
+.hero-stats > div:last-child{border-right:0!important}
+.hero-stats strong{color:var(--ink)!important}
+.hero-stats span{color:var(--muted)!important}
+
+/* Tighter sections with clear boundaries */
+.section{
+  padding:54px 0!important;
+  border-top:1px solid var(--line)!important;
+}
+.section:nth-of-type(n){background:#fff!important}
+.section:nth-of-type(3),
+.section:nth-of-type(5){background:var(--cream)!important}
+.section-heading{
+  max-width:690px!important;
+  margin-bottom:24px!important;
+}
+.section-heading h2,
+.section > .shell > h2{
+  font-size:clamp(1.9rem,3vw,2.85rem)!important;
+  line-height:1.08!important;
+  letter-spacing:-.025em!important;
+  margin-bottom:10px!important;
+}
+.kicker{
+  color:#8a765c!important;
+  font-size:.72rem!important;
+  letter-spacing:.16em!important;
+}
+
+/* Make all general content cards structured and compact */
+.card,
+[class*="help-card"],
+[class*="outcome-card"]{
+  background:#fff!important;
+  border:1px solid var(--line)!important;
+  border-radius:6px!important;
+  padding:24px!important;
+  box-shadow:none!important;
+}
+.cards-grid,
+.content-grid,
+.help-grid,
+.outcomes-grid{
+  gap:14px!important;
+}
+
+/* MY APPROACH — repair the broken/invisible layout */
+.method-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:14px!important;
+  margin-top:24px!important;
+  padding:0!important;
+}
+.method-step{
+  display:block!important;
+  min-height:0!important;
+  padding:26px!important;
+  background:#fff!important;
+  border:1px solid var(--line)!important;
+  border-radius:6px!important;
+  color:var(--ink)!important;
+  opacity:1!important;
+}
+.method-step:nth-child(2){background:var(--sand)!important}
+.method-step:nth-child(3){background:var(--sage)!important}
+.method-step *{
+  opacity:1!important;
+  visibility:visible!important;
+}
+.method-step .step-number,
+.method-step [class*="number"]{
+  display:block!important;
+  margin-bottom:18px!important;
+  color:#8a765c!important;
+  font-size:.76rem!important;
+  font-weight:700!important;
+}
+.method-step h3{
+  color:var(--ink)!important;
+  font-size:1.25rem!important;
+  line-height:1.2!important;
+  margin:0 0 10px!important;
+}
+.method-step p{
+  color:#555650!important;
+  font-size:.94rem!important;
+  line-height:1.55!important;
+  margin:0!important;
+}
+
+/* If approach uses bare children rather than method-step classes */
+.method-grid > *{
+  opacity:1!important;
+  visibility:visible!important;
+  color:var(--ink)!important;
+}
+
+/* Before/After remains a strong visual section, but professional */
+.before-after-grid{
+  gap:14px!important;
+}
+.before-after-grid > *{
+  border-radius:6px!important;
+  padding:28px!important;
+}
+.before-after-grid > *:first-child{
+  background:var(--sand)!important;
+  color:var(--ink)!important;
+}
+.before-after-grid > *:last-child{
+  background:var(--sage-dark)!important;
+  color:#fff!important;
+}
+.before-after-grid > *:last-child *{color:#fff!important}
+
+/* About stays clean */
+.about-card{background:#fff!important;border:1px solid var(--line)!important}
+
+/* Compact dark CTA */
+.cta-section{
+  padding:50px 0!important;
+  background:#263029!important;
+}
+.cta-section h2{
+  font-size:clamp(1.9rem,3vw,2.7rem)!important;
+}
+
+/* Prevent giant blank spaces caused by reveal states */
+.reveal{
+  transform:none!important;
+}
+.reveal.visible{
+  transform:none!important;
+}
+
+@media(max-width:850px){
+  .hero-grid,.method-grid{grid-template-columns:1fr!important}
+  .portrait-wrap{margin:0!important}
+  .hero-stats > div{border-right:0!important;border-bottom:1px solid var(--line)!important}
+  .hero-stats > div:last-child{border-bottom:0!important}
+}
+</style>
+
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
