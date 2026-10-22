@@ -352,6 +352,99 @@
   .hero-services-highlights{grid-template-columns:1fr}
 }
 
+
+/* Hero refinement — softer, smaller, and integrated with the earth-tone palette */
+.page-hero{
+  padding:54px 0 50px;
+  background:#f3eee5;
+}
+.page-hero:after{
+  width:240px;
+  height:240px;
+  right:-55px;
+  top:-100px;
+  background:#dce3d6;
+  opacity:.62;
+}
+.hero-services-grid{
+  grid-template-columns:minmax(0,1.1fr) minmax(360px,.9fr);
+  gap:56px;
+  align-items:center;
+}
+.hero-services-main h1{
+  max-width:610px;
+  margin:0 0 16px;
+  font-size:clamp(2.55rem,4.6vw,4.4rem);
+  line-height:1;
+  letter-spacing:-.04em;
+}
+.hero-services-main .hero-lead{
+  max-width:620px;
+  margin:0;
+  color:#5d5c56;
+  font-size:1rem;
+  line-height:1.68;
+}
+.hero-service-nav{
+  position:relative;
+  padding:25px 28px 22px;
+  border:1px solid rgba(32,33,31,.12);
+  border-radius:5px;
+  background:rgba(255,255,255,.56);
+  backdrop-filter:blur(3px);
+}
+.hero-service-nav-title{
+  margin:0 0 11px;
+  color:#77736b;
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+.hero-service-links{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  column-gap:22px;
+}
+.hero-service-links a{
+  display:grid;
+  grid-template-columns:24px 1fr;
+  gap:7px;
+  align-items:start;
+  padding:9px 0;
+  border-top:1px solid rgba(32,33,31,.11);
+  color:#353732;
+  font-size:.76rem;
+  font-weight:600;
+  line-height:1.35;
+  text-decoration:none;
+  transition:color .18s ease,transform .18s ease;
+}
+.hero-service-links a span{
+  color:#989188;
+  font-size:.66rem;
+  letter-spacing:.08em;
+}
+.hero-service-links a:hover{
+  color:#65705c;
+  transform:translateX(2px);
+}
+html{scroll-behavior:smooth}
+.service-detail{scroll-margin-top:100px}
+
+@media(max-width:900px){
+  .hero-services-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+}
+@media(max-width:560px){
+  .page-hero{padding:44px 0 40px}
+  .hero-services-main h1{font-size:2.65rem}
+  .hero-service-nav{padding:21px}
+  .hero-service-links{grid-template-columns:1fr}
+}
+
 </style>
 </head>
 <body>
@@ -369,17 +462,23 @@
 <div class="hero-services-grid">
   <div class="hero-services-main">
     <p class="kicker">Services</p>
-    <h1>Practical support for complex projects, programs and portfolios.</h1>
-    <p>From project leadership and financial control to recovery, process improvement and change, I help organizations bring structure, visibility and control to complex work.</p>
+    <h1>Support for complex work.</h1>
+    <p class="hero-lead">Project leadership, financial control, program oversight and practical delivery support—bringing structure, visibility and control where it is needed most.</p>
   </div>
-  <div class="hero-services-highlights" aria-label="Service areas">
-    <span>Project &amp; Program Management</span>
-    <span>Financial &amp; Cost Control</span>
-    <span>Program Controls</span>
-    <span>Project Planning &amp; Recovery</span>
-    <span>Process Improvement</span>
-    <span>Change Management</span>
-  </div>
+
+  <aside class="hero-service-nav" aria-label="Explore services">
+    <p class="hero-service-nav-title">Explore services</p>
+    <div class="hero-service-links">
+      <a href="#project-program"><span>01</span>Project &amp; Program Management</a>
+      <a href="#financial"><span>02</span>Financial &amp; Cost Control</a>
+      <a href="#portfolio"><span>03</span>Program Controls &amp; Portfolio Oversight</a>
+      <a href="#planning"><span>04</span>Project Setup &amp; Planning</a>
+      <a href="#recovery"><span>05</span>Project Recovery &amp; Stabilization</a>
+      <a href="#training"><span>06</span>PM Training &amp; Delivery Improvement</a>
+      <a href="#process-improvement"><span>07</span>Process Improvement</a>
+      <a href="#change-management"><span>08</span>Change Management</a>
+    </div>
+  </aside>
 </div>
 </div></section>
 
