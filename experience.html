@@ -125,6 +125,104 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",san
 }
 </style>
 
+
+<style>
+/* Current consulting role */
+.current-role{
+  background:var(--sage)!important;
+  padding:30px!important;
+  margin:0 0 2px!important;
+  border-radius:5px!important;
+}
+.current-role .role-intro{
+  margin:0 0 20px!important;
+  color:#444640!important;
+  line-height:1.6!important;
+}
+.current-role .role-subhead{
+  margin:22px 0 8px!important;
+  color:#6f675b!important;
+  font-size:.69rem!important;
+  font-weight:700!important;
+  letter-spacing:.14em!important;
+}
+.current-role ul + .role-subhead{margin-top:25px!important}
+
+/* Completely independent credentials layout */
+.credentials-rebuilt{
+  width:100%!important;
+  margin:0!important;
+  padding:58px 0!important;
+  background:var(--cream)!important;
+}
+.credentials-inner{
+  width:calc(100% - 48px)!important;
+  max-width:1120px!important;
+  margin:0 auto!important;
+  padding:0!important;
+}
+.credentials-heading{
+  width:100%!important;
+  display:grid!important;
+  grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr)!important;
+  gap:54px!important;
+  align-items:end!important;
+  margin:0 0 30px!important;
+}
+.credentials-heading h2{
+  margin:0!important;
+  font-family:"Playfair Display",serif!important;
+  font-size:clamp(2rem,3vw,2.85rem)!important;
+  line-height:1.07!important;
+  letter-spacing:-.03em!important;
+}
+.credentials-heading > p{
+  width:100%!important;
+  max-width:620px!important;
+  margin:0!important;
+  color:var(--muted)!important;
+  line-height:1.6!important;
+}
+.credentials-grid-rebuilt{
+  width:100%!important;
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:14px!important;
+  margin:0!important;
+  padding:0!important;
+}
+.credential-rebuilt{
+  width:100%!important;
+  min-width:0!important;
+  padding:23px 25px!important;
+  background:#fff!important;
+  border:1px solid var(--line)!important;
+  border-radius:5px!important;
+}
+.credential-rebuilt:nth-child(2),
+.credential-rebuilt:nth-child(3){
+  background:var(--sand)!important;
+}
+.credential-rebuilt strong{
+  display:block!important;
+  margin:0 0 6px!important;
+  color:var(--ink)!important;
+}
+.credential-rebuilt span{
+  display:block!important;
+  color:var(--muted)!important;
+  font-size:.86rem!important;
+  line-height:1.45!important;
+}
+@media(max-width:760px){
+  .credentials-inner{width:calc(100% - 32px)!important}
+  .credentials-heading,
+  .credentials-grid-rebuilt{grid-template-columns:1fr!important}
+  .credentials-heading{gap:18px!important}
+  .current-role{padding:24px!important}
+}
+</style>
+
 </head><body><header class="site-header"><div class="shell nav-shell">
 <a class="brand" href="index.html"><span class="brand-mark">CS</span><span>Claudia Saikali</span></a>
 <nav class="nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a href="experience.html">Experience</a><a href="insights.html">Insights</a><a class="nav-cta" href="contact.html">Let’s talk</a></nav>
@@ -134,7 +232,30 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",san
 <section class="page-hero"><div class="shell hero-grid"><div><p class="kicker">Experience</p><h1>Leadership across complex delivery, portfolios, finance and change.</h1></div><p class="hero-copy">More than 15 years leading digital, product, program and operational work, often in environments with many moving pieces, demanding stakeholders and significant financial accountability.</p></div></section>
 <section class="section experience-section"><div class="shell"><div class="section-title"><div><p class="kicker">Career</p><h2>Experience</h2></div><p>A progression of project, program, product and operational leadership with increasing responsibility for financial performance, delivery and organizational change.</p></div>
 <div class="timeline">
-<article class="role current-role"><div class="role-meta"><strong>EHtel Networks Inc.</strong><span>Feb 2026 – Present</span></div><div><h3>Construction Program Controls Consultant</h3><ul><li>Lead program controls and performance oversight for two telecommunications infrastructure programs with combined budgets approaching $300M.</li><li>Built and rolled out cost-to-complete forecasting integrating actuals, contractor invoices, purchase orders, commitments, installed quantities, remaining scope and schedule.</li><li>Consolidate cost, schedule, construction progress, contractor performance and risk into a clear program-level view.</li><li>Reconcile gaps across financial reporting, field progress, billing, materials and labour while tracking progress across nine construction areas.</li><li>Provide weekly program updates to the President/CEO and prepare executive and Board reporting on forecasts, cost pressures, recovery actions and decisions required.</li></ul></div></article>
+<article class="role current-role">
+  <div class="role-meta">
+    <strong>Independent · Self-employed</strong>
+    <span>Jan 2026 - Present · Toronto, Ontario, Canada</span>
+  </div>
+  <div>
+    <h3>Project, Portfolio &amp; Operations Consultant</h3>
+    <p class="role-intro">I help organizations regain control of complex projects and portfolios through structured delivery, financial visibility and executive-level oversight.</p>
+
+    <p class="role-subhead">SERVICES</p>
+    <ul>
+      <li>Project &amp; Program Leadership: project kickoffs, SOW development, timelines, delivery plans, governance and hands-on project management.</li>
+      <li>Financial &amp; Portfolio Management: budget management, forecasting, cost-to-complete analysis, annual planning and consolidated portfolio reporting.</li>
+      <li>PM Capability &amp; Strategic Support: team leadership and training, executive updates, delivery process improvement and strategic planning.</li>
+    </ul>
+
+    <p class="role-subhead">CLIENT WORK</p>
+    <ul>
+      <li>Telecommunications infrastructure: Lead project and portfolio management for $250M+ in construction projects, providing executive-level oversight across delivery, financials, cost-to-complete forecasting, governance and reporting. Partner with executive leadership, finance, construction, engineering, sales and contractors to resolve delivery issues and support strategic decision-making.</li>
+      <li>Operational &amp; financial planning: Lead company-wide 2027 budget planning, giving leadership a clear view of investment priorities, funding needs and expected spend.</li>
+      <li>Marketing &amp; advertising agencies: Provide program and project management, SOW development, planning and timelines, team leadership and training, strategic planning, executive updates and delivery process improvement.</li>
+    </ul>
+  </div>
+</article>
 <article class="role"><div class="role-meta"><strong>Klick Health</strong><span>Nov 2022 – Jan 2026</span></div><div><h3>Senior Director, Product &amp; Project Management (Finance)</h3><ul><li>Owned the financial management system supporting project managers and delivery teams.</li><li>Led redesign across invoicing, time tracking, utilization, budgeting, revenue tracking and forecasting.</li><li>Partnered with the CFO, COO and VP Technology on investment priorities, capacity and executive reporting.</li><li>Oversaw $50M+ in departmental budgets and implemented AI-enabled OCR that reduced administrative effort by 20%.</li></ul></div></article>
 <article class="role"><div class="role-meta"><strong>Klick Health</strong><span>May 2021 – Nov 2022</span></div><div><h3>Director, Product &amp; Project Management</h3><ul><li>Developed quarterly and annual roadmaps aligned to strategic priorities.</li><li>Led project managers plus support and training teams using hybrid Agile delivery.</li><li>Directed platform integrations and change efforts supporting adoption of new tools.</li></ul></div></article>
 <article class="role"><div class="role-meta"><strong>Klick Health</strong><span>Nov 2019 – May 2021</span></div><div><h3>Director, Product Rollout &amp; Adoption</h3><ul><li>Designed scalable company-wide rollout processes for new software features and tools.</li><li>Led support and training across Canadian and U.S. offices.</li><li>Oversaw a product knowledge base with 200+ how-to articles.</li></ul></div></article>
@@ -142,10 +263,34 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",san
 <article class="role"><div class="role-meta"><strong>Klick Health</strong><span>Apr 2011 – Sept 2018</span></div><div><h3>Digital Program Manager, Senior Project Manager &amp; Digital Project Manager</h3><ul><li>Led pharmaceutical digital portfolios for clients including Acorda, Pfizer, Reckitt Benckiser and Salix.</li><li>Managed 30–50 concurrent projects annually and programs with budgets of $5M–$10M.</li><li>Owned client-facing delivery, financial performance, resourcing, risk and cross-functional execution.</li></ul></div></article>
 <article class="role"><div class="role-meta"><strong>Digital Cement</strong><span>Feb 2007 – Apr 2011</span></div><div><h3>Project Manager, Project Coordinator &amp; Quality Assurance</h3><ul><li>Supported digital project delivery across websites, redesigns and email programs.</li><li>Managed scoping, estimates, timelines, resources, budgets, risks and issues.</li></ul></div></article>
 </div></div></section>
-<section class="section credentials"><div class="shell"><div class="section-title"><div><p class="kicker">Credentials</p><h2>Education &amp; certifications</h2></div><p>Formal education and professional credentials supporting project leadership, technology management and organizational change.</p></div><div class="credential-grid">
-<div class="credential"><strong>Bachelor of Commerce</strong><span>Information Technology Management, Toronto Metropolitan University</span></div>
-<div class="credential"><strong>Marketing Minor</strong><span>Toronto Metropolitan University</span></div>
-<div class="credential"><strong>Leadership Essentials Certificate</strong><span>University of Toronto</span></div>
-<div class="credential"><strong>PMP &amp; Prosci® Change Practitioner</strong><span>Project Management Institute and Prosci®</span></div>
-</div></div></section>
+<section class="section credentials credentials-rebuilt">
+  <div class="credentials-inner">
+    <div class="credentials-heading">
+      <div>
+        <p class="kicker">Credentials</p>
+        <h2>Education &amp; certifications</h2>
+      </div>
+      <p>Formal education and professional credentials supporting project leadership, technology management and organizational change.</p>
+    </div>
+
+    <div class="credentials-grid-rebuilt">
+      <div class="credential-rebuilt">
+        <strong>Bachelor of Commerce</strong>
+        <span>Information Technology Management, Toronto Metropolitan University</span>
+      </div>
+      <div class="credential-rebuilt">
+        <strong>Marketing Minor</strong>
+        <span>Toronto Metropolitan University</span>
+      </div>
+      <div class="credential-rebuilt">
+        <strong>Leadership Essentials Certificate</strong>
+        <span>University of Toronto</span>
+      </div>
+      <div class="credential-rebuilt">
+        <strong>PMP &amp; Prosci® Change Practitioner</strong>
+        <span>Project Management Institute and Prosci®</span>
+      </div>
+    </div>
+  </div>
+</section>
 </main><footer class="site-footer"><div class="shell footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">CS</span><span>Claudia Saikali</span></a><p>Helping organizations regain control of complex projects, programs and portfolios.</p></div><div class="footer-links"><a href="services.html">Services</a><a href="experience.html">Experience</a><a href="insights.html">Insights</a><a href="contact.html">Contact</a><a href="https://linkedin.com/in/claudia-saikali-pmp/" target="_blank" rel="noreferrer">LinkedIn</a></div></div><div class="shell footer-bottom"><span>© <span id="year"></span> Claudia Saikali</span><span>Toronto, Ontario</span></div></footer><script>document.getElementById("year").textContent=new Date().getFullYear();</script></body></html>
