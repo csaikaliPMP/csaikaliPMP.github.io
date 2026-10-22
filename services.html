@@ -295,6 +295,63 @@
   .work-option .work-num{margin-bottom:18px}
   .services-cta-card{grid-template-columns:1fr;gap:24px}
 }
+
+/* Structured services hero */
+.page-hero{
+  padding:64px 0 58px;
+}
+.page-hero:after{
+  width:280px;
+  height:280px;
+  right:-55px;
+  top:-105px;
+}
+.hero-services-grid{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:minmax(0,1.55fr) minmax(280px,.75fr);
+  gap:64px;
+  align-items:end;
+}
+.hero-services-main h1{
+  max-width:800px;
+  margin-bottom:20px;
+}
+.hero-services-main > p:last-child{
+  max-width:690px;
+  margin-bottom:0;
+}
+.hero-services-highlights{
+  display:grid;
+  gap:0;
+  border-top:1px solid rgba(32,33,31,.18);
+  margin-bottom:4px;
+}
+.hero-services-highlights span{
+  display:block;
+  padding:10px 0;
+  border-bottom:1px solid rgba(32,33,31,.18);
+  color:#4f514c;
+  font-size:.78rem;
+  font-weight:600;
+  letter-spacing:.025em;
+}
+@media(max-width:900px){
+  .hero-services-grid{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+  .hero-services-highlights{
+    grid-template-columns:repeat(2,1fr);
+    column-gap:24px;
+  }
+}
+@media(max-width:560px){
+  .page-hero{padding:48px 0 42px}
+  .hero-services-highlights{grid-template-columns:1fr}
+}
+
 </style>
 </head>
 <body>
@@ -309,9 +366,21 @@
 
 <main id="main">
 <section class="page-hero"><div class="shell">
-<p class="kicker">Services</p>
-<h1>Practical support for complex projects, programs and portfolios.</h1>
-<p>From project leadership and financial control to recovery, process improvement and change, I help organizations bring structure, visibility and control to complex work.</p>
+<div class="hero-services-grid">
+  <div class="hero-services-main">
+    <p class="kicker">Services</p>
+    <h1>Practical support for complex projects, programs and portfolios.</h1>
+    <p>From project leadership and financial control to recovery, process improvement and change, I help organizations bring structure, visibility and control to complex work.</p>
+  </div>
+  <div class="hero-services-highlights" aria-label="Service areas">
+    <span>Project &amp; Program Management</span>
+    <span>Financial &amp; Cost Control</span>
+    <span>Program Controls</span>
+    <span>Project Planning &amp; Recovery</span>
+    <span>Process Improvement</span>
+    <span>Change Management</span>
+  </div>
+</div>
 </div></section>
 
 <section class="section services-section"><div class="shell">
